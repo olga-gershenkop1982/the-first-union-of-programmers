@@ -1,0 +1,53 @@
+block vars
+  - var lang = 'ru';
+  - var bodyClass = 'page-inner';
+
+
+
+doctype html
+html(lang= lang)
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    link(href="css/fonts.css" rel="stylesheet")
+    link(href="css/main.css" rel="stylesheet")
+
+    title= pageTitle
+
+  body(class= bodyClass)
+
+    include ../blocks/generals/header/page-header/page-header
+
+    main
+      article(class= articleClass)
+
+        div.container
+          include ../blocks/generals/breadcrumbs/breadcrumbs
+
+          if tab === 'ones-solutions'
+            div.page-article-layout
+              div.page-article-column.page-article-column-left
+                include ../blocks/generals/page-title/page-title/page-title
+              div.page-article-column.page-article-column-right
+                include ../blocks/generals/perform/perform
+
+          else if tab === 'partner-solutions'
+            div.page-article-row
+              include ../blocks/generals/page-title/page-title/page-title
+            div.page-article-layout
+              div.page-article-column.page-article-column-left
+              div.page-article-column.page-article-column-right
+
+          else if tab === 'services'
+            div.page-article-row
+              include ../blocks/generals/page-title/page-title/page-title
+            div.page-article-layout
+              div.page-article-column.page-article-column-left
+              div.page-article-column.page-article-column-right
+
+
+
+    include ../blocks/generals/footer/page-footer/page-footer
+
+    block scripts

@@ -1,0 +1,11 @@
+.site-nav__item {
+  margin-right: 48px;
+}
+
+.site-nav__item:nth-child(6n) {
+  margin-right: 0;
+}
+
+.site-nav__item--current {
+  color: #cf0404;
+}

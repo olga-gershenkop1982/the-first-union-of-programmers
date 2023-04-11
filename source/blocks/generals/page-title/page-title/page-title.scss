@@ -1,0 +1,53 @@
+.page-title {
+  display: block;
+
+  margin: 0;
+
+  font-family: "Jost", "Arial", sans-serif;
+  font-weight: 500;
+}
+
+.page-title--ones-solutions {
+  position: relative;
+}
+
+.page-title--ones-solutions::before {
+  position: absolute;
+  top: -47px;
+  left: -97px;
+
+  z-index: -1;
+
+  content: "";
+
+  width: 161px;
+  height: 161px;
+
+  padding: 0;
+
+  border-radius: 50%;
+}
+
+.sell .page-title--ones-solutions::before {
+  background-color: #68d0fe;
+}
+
+.integration .page-title--ones-solutions::before {
+  background-color: #b182ec;
+}
+
+.rework .page-title--ones-solutions::before {
+  background-color: #98df1d;
+}
+
+.rent .page-title--ones-solutions::before {
+  background-color: #ffb4e1;
+}
+
+.services-sets .page-title--ones-solutions::before {
+  background-color: #a2c6fc;
+}
+
+.escort .page-title--ones-solutions::before {
+  background-color: #71efb8;
+}

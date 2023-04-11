@@ -1,0 +1,13 @@
+.contacts__list {
+  margin: 0;
+
+  font-family: "Jost", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.page-footer .contacts__list {
+  display: flex;
+  flex-direction: column;
+
+  width: 310px;
+}

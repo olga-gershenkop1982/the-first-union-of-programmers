@@ -1,0 +1,10 @@
+- var items = ['Сертифицированные сотрудники', 'Короткие сроки', 'Низкая стоимость', 'Широкий спектр услуг', 'Работаем без выходных'];
+
+
+section.features
+  h2.visually-hidden Наши преимущества_
+
+  div.container
+    ul.features__list
+      each item in items
+        li.features__item= item

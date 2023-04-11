@@ -1,0 +1,16 @@
+- var repeatTitleName = '/ ' + titleName + '_ ' + '/ ' + titleName + '_ ';
+- var repeatTitleCompany = '/ ' + titleName + '_ ' + '/ ' + titleCompany + '_ ';
+
+- var templateName = repeatTitleName + repeatTitleName;
+- var templateCompany = repeatTitleCompany + repeatTitleCompany;
+
+
+
+if sectionClass === 'contacts'
+  p.running-line.running-line--paddingAccentLessNormal= templateName + templateName + '/'
+else if sectionClass === 'about'
+  p.running-line.running-line--paddingAccent= templateCompany + templateCompany + '/'
+else if sectionClass === 'actual'
+  p.running-line= templateName + templateName + '/'
+else
+  p.running-line.running-line--paddingAccent= templateName + templateName + '/'

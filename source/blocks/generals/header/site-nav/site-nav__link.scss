@@ -1,0 +1,12 @@
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: #cf0404;
+  outline: none;
+
+  transition: 0.5s;
+}
+
+.site-nav__link:active {
+  color: #cf0404;
+  transition: 0.5s;
+}

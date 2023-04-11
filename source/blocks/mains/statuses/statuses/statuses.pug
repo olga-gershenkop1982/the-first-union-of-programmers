@@ -1,0 +1,19 @@
+- var sectionClass = 'statuses';
+- var titleName = 'Наши статусы';
+
+- var items = [{addedClass: '', imgPath: '/statuses/', imgNumber: '1.png', imgAlt: '«1C: Франчайзинг»'}, {addedClass: '', imgPath: '/statuses/', imgNumber: '2.png', imgAlt: '«1C: Центр Реальной Автоматизации»'}, {addedClass: '', imgPath: '/statuses/', imgNumber: '3.png', imgAlt: '«1C: Центр Компетенции»'}];
+
+
+
+section.section.section--less-running-line(class= sectionClass)
+  div.container.slider
+
+    header.section-header.slider-header.statuses-header
+      h2.section-title.statuses-title= titleName
+        span.blink-underscore _
+      include ../../../generals/slider/slider-controls/slider-controls/slider-controls
+
+    ul.section-list.slider-list.statuses-list
+      each item in items
+        li.section-item.slider-slide
+          include ../../../../globals/section/section-item-image/section-item-image

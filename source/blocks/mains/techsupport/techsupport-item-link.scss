@@ -1,0 +1,58 @@
+.techsupport-item-link {
+  position: relative;
+
+  box-sizing: border-box;
+
+  width: 250px;
+
+  padding-left: 57px;
+  padding-right: 21px;
+
+  padding-top: 20px;
+  padding-bottom: 19px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  border: 1px solid #020202;
+}
+
+.techsupport-item-link:hover,
+.techsupport-item-link:focus {
+  color: #ffffff;
+
+  border: 1px solid #0745c3;
+  background-color: #0745c3;
+
+  transition: 0.5s;
+}
+
+.techsupport-item-link:active {
+  color: #ffe605;
+
+  border: 1px solid #020202;
+  background-color: #020202;
+
+  transition: 0.5s;
+}
+
+.techsupport-item-link svg {
+  position: absolute;
+  top: 17px;
+  left: 23px;
+}
+
+.techsupport-item-link:hover path,
+.techsupport-item-link:focus path {
+  fill: #ffffff;
+  transition: 0.5s;
+}
+
+.techsupport-item-link:active path {
+  fill: #ffe605;
+  transition: 0.5s;
+}

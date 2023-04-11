@@ -1,0 +1,23 @@
+- var sectionClass = 'distributors';
+
+- var items = [{addedClass: '', imgPath: '/distributors/', imgNumber: '1.png', imgAlt: '«KASPERSKY»'}, {addedClass: '', imgPath: '/distributors/', imgNumber: '2.png', imgAlt: '«ШТРИХ-М»'}, {addedClass: '', imgPath: '/distributors/', imgNumber: '3.png', imgAlt: '«Microsoft»'}, {addedClass: '', imgPath: '/distributors/', imgNumber: '4.png', imgAlt: '«Dr.WEB»'}];
+
+
+
+section.section.section--less-running-line(class= sectionClass)
+  h2.visually-hidden Наши дистрибьюторы_
+
+  div.container.slider
+
+    header.section-header.slider-header.distributors-header
+      p.section-lead.distributors-lead Мы дистрибьюторы
+        span.blink-underscore _
+        span.visually-hidden таких компаний, как:
+      include ../../../../generals/slider/slider-controls/slider-controls/slider-controls
+
+    ul.section-list.distributors-list.slider-list
+      each item in items
+        li.section-item.slider-slide
+          include ../../../../../globals/section/section-item-image/section-item-image
+
+    include ../../../../generals/btn/btn/btn

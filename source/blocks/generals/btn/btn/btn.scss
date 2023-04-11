@@ -1,0 +1,41 @@
+.btn {
+  display: inline-block;
+
+  text-align: center;
+  vertical-align: middle;
+
+  box-sizing: border-box;
+
+  font-family: "Jost", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+
+  color: #ffffff;
+  background-color: #0745c3;
+
+  border: 1px solid #0745c3;
+
+  cursor: pointer;
+  word-wrap: break-word;
+
+  &:hover,
+  &:focus {
+    color: #0745c3;
+
+    background-color: #ffffff;
+    border-color: #79797a;
+
+    outline: none;
+    transition: 0.5s;
+  }
+
+  &:active {
+    color: #ffe605;
+
+    background-color: #020202;
+    border-color: #020202;
+
+    transition: 0.5s;
+  }
+}

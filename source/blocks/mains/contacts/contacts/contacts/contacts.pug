@@ -1,0 +1,33 @@
+- var sectionClass = 'contacts';
+- var titleName = 'Контакты';
+
+
+
+section.section.section--running-line(class= sectionClass)(id= sectionClass)
+  div.container
+
+    header.section-header.contacts-header
+      h2.section-title= titleName
+        span.blink-underscore _
+
+    div.contacts-wrapper
+
+      div.contacts-text-column
+        include ../../contacts__list/contacts__list
+        include ../../../../generals/socials/socials/socials
+
+      div.contacts-img-column
+
+        div.iframe
+          iframe(
+            src="https://yandex.ru/map-widget/v1/-/CCUyUTaU1B"
+            width="450" height="400"
+          )
+
+        img.contacts-img-column__picture(
+          src="img/contacts/map.jpg"
+          width="450" height="400"
+          alt="Мы находимся по адресу: г.Омск, ул.5-я линия, 157 A, кор.10, офис 3"
+        )
+
+  include ../../../../generals/running-line/running-line

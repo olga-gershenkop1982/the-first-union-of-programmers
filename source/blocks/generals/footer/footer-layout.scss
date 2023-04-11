@@ -1,0 +1,9 @@
+.footer-layout {
+  display: flex;
+}
+
+.footer-wrapper:nth-child(2) .footer-layout {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}

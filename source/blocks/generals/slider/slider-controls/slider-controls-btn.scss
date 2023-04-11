@@ -1,0 +1,37 @@
+.slider-controls-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.slider-controls-btn:disabled circle {
+  fill: none;
+}
+.slider-controls-btn:disabled path {
+  stroke: #79797a;
+  transition: 0.5s;
+}
+
+.slider-controls-btn:hover circle,
+.slider-controls-btn:focus circle {
+  fill: #ffffff;
+  transition: 0.5s;
+}
+
+.slider-controls-btn:active circle {
+  fill: #ffffff;
+  transition: 0.5s;
+}
+
+.slider-controls-btn:hover path,
+.slider-controls-btn:focus path {
+  stroke: #020202;
+  transition: 0.5s;
+}
+
+.slider-controls-btn:active path {
+  stroke: #020202;
+  transition: 0.5s;
+}

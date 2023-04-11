@@ -1,0 +1,25 @@
+.socials-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50px;
+  min-height: 50px;
+
+  margin-right: 30px;
+}
+
+.socials-item:last-child {
+  margin-right: 0;
+}
+
+.socials-item path:hover,
+.socials-item path:focus {
+  fill: #0745c3;
+  transition: 0.5s;
+}
+
+.socials-item path:active {
+  fill: #0745c3;
+  transition: 0.5s;
+}

@@ -1,0 +1,42 @@
+- var sectionClass = 'about';
+
+- var titleName = 'О нас';
+- var titleCompany = 'Первый Союз Программистов';
+
+- var statistics = [{termSymbol: '>', termNumber: '30', description: 'сотрудников сертифицированных “Фирмой 1С”'}, {termSymbol: '>', termNumber: '7', description: 'лет успешной работы с компаниями любой отрасли'}, {termSymbol: '>', termNumber: '3000', description: 'внедрений автоматизации систем'}, {termSymbol: '>', termNumber: '400', description: 'клиентов от небольших фирм до крупного бизнеса'}];
+
+- var companyParagraphs = ['Наша компания — это команда профессиональных сертифицированных IT-разработчиков.', 'Имея большой опыт в решении сложных и нестандартных задач, наши специалисты ответят на Ваши самые «каверзные» вопросы и удовлетворят, казалось бы, самые непростые запросы.', 'Однажды обратившись к нам, Вы приобретете в лице нашей компании надежного помощника, который всегда вникнет в суть проблемы, найдет оптимальное решение и реализует его с минимальными для Вас затратами.'];
+
+
+
+section.section.section--running-line(class= sectionClass)(id= sectionClass)
+  div.container
+
+    header.section-header.about-header
+      h2.section-title= titleName
+        span.blink-underscore _
+
+    section.about-company
+      div.container
+
+        h3.about-company__title= titleCompany
+
+        div.about-company-layout
+          div.about-company-text-column
+
+            dl.statistic
+              each statistic in statistics
+                div.statistic-group
+                  dt.statistic-term
+                    span.statistic-term__inner= statistic.termSymbol
+                    span.statistic-term__inner= statistic.termNumber
+                  dd.statistic-description= statistic.description
+
+          div.about-company-text-column
+
+            div.about-company-info
+              each companyParagraph in companyParagraphs
+                p.about-company-info__text= companyParagraph
+
+    include ../../../generals/btn/btn/btn
+  include ../../../generals/running-line/running-line

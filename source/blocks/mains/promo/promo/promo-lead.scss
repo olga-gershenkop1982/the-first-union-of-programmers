@@ -1,0 +1,16 @@
+.promo-lead {
+  max-width: 665px;
+
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 120px;
+
+  text-transform: uppercase;
+
+  &__inner {
+    color: #0745c3;
+  }
+}

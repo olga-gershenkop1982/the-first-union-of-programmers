@@ -1,0 +1,19 @@
+.btn--round {
+  width: 160px;
+  min-height: 160px;
+
+  padding: 48px 0;
+
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 20px #f1f2f4,
+    0 0 0 21px #020202
+  ;
+}
+
+.promo .btn--round {
+  box-shadow:
+    0 0 0 20px #ffe605,
+    0 0 0 21px #020202
+  ;
+}

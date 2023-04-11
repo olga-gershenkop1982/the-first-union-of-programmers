@@ -1,0 +1,50 @@
+.page-article-layout {
+  display: flex;
+
+  margin-bottom: 90px;
+  padding-top: 45px;
+}
+
+.page-article-column-left {
+  width: 310px;
+}
+
+.sell .page-article-column-left,
+.escort .page-article-column-left {
+  margin-right: 120px;
+}
+
+.integration .page-article-column-left,
+.rework .page-article-column-left {
+  margin-right: 270px;
+}
+
+.rent .page-article-column-left {
+  margin-right: 175px;
+}
+
+.services-sets .page-article-column-left {
+  width: 335px;
+  margin-right: 245px;
+}
+
+.escort .page-article-column-left {
+  width: 465px;
+}
+
+.page-article-column-right {
+  width: 355px;
+  padding-top: 14px;
+}
+
+.sell .page-article-column-right {
+  width: 435px;
+}
+
+.integration .page-article-column-right {
+  width: 300px;
+}
+
+.services-sets .page-article-column-right {
+  width: 435px;
+}

@@ -1,0 +1,19 @@
+.section-item-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  width: 300px;
+  height: 200px;
+
+  margin: 0;
+
+  border: 1px solid #79797a;
+  background-color: #ffffff;
+}
+
+.section-item-image__picture {
+  width: 220px;
+  height: 120px;
+}

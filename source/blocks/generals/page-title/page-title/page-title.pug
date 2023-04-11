@@ -1,0 +1,16 @@
+if tab === 'ones-solutions'
+  header
+    h1.page-title.page-title--ones-solutions
+      span.page-title__inner.page-title__inner--ones-solutions= title1Inner1
+      if title1Inner1 !== 'Сервисы 1С'
+        span.page-title__inner.page-title__inner--ones-solutions= 'программных продуктов 1С'
+      else
+        span.page-title__inner.page-title__inner--ones-solutions= 'и комплекты поддержки (КП)'
+else if tab === 'services'
+  - var title1 = pageTitle;
+  header
+    h1.page-title.page-title__inner= title1
+else
+  - var title1 = pageTitle;
+  header
+    h1.visually-hidden= title1

@@ -1,0 +1,43 @@
+if bodyClass === 'page'
+  - var siteLinks = [{href: 'ones-solutions', text: '1С Решения'}, {href: 'partner-solutions', text: 'Партнерские решения'}, {href: 'services', text: 'Услуги'}, {href: 'actual', text: 'Актуальное'}, {href: 'about', text: 'О нас'}, {href: 'contacts', text: 'Контакты'}];
+
+  ul.site-nav
+    each siteLink in siteLinks
+      li.site-nav__item
+        a.site-nav__link(href= '#' + siteLink.href)= siteLink.text
+
+else if tab === 'ones-solutions'
+  - var siteLinks = [{href: 'ones-solutions', text: '1С Решения', active: '1'}, {href: 'partner-solutions', text: 'Партнерские решения', active: ''}, {href: 'services', text: 'Услуги', active: ''}, {href: 'actual', text: 'Актуальное', active: ''}, {href: 'about', text: 'О нас', active: ''}, {href: 'contacts', text: 'Контакты', active: ''}];
+
+  ul.site-nav
+    each siteLink in siteLinks
+      if siteLink.active
+        li.site-nav__item.site-nav__item--current
+          a.site-nav__link(href= 'index.html#' + siteLink.href)= siteLink.text
+      else
+        li.site-nav__item
+          a.site-nav__link(href= 'index.html#' + siteLink.href)= siteLink.text
+
+else if tab === 'partner-solutions'
+  - var siteLinks = [{href: 'ones-solutions', text: '1С Решения', active: ''}, {href: 'partner-solutions', text: 'Партнерские решения', active: '1'}, {href: 'services', text: 'Услуги', active: ''}, {href: 'actual', text: 'Актуальное', active: ''}, {href: 'about', text: 'О нас', active: ''}, {href: 'contacts', text: 'Контакты', active: ''}];
+
+  ul.site-nav
+    each siteLink in siteLinks
+      if siteLink.active
+        li.site-nav__item.site-nav__item--current
+          a.site-nav__link(href= 'index.html#' + siteLink.href)= siteLink.text
+      else
+        li.site-nav__item
+          a.site-nav__link(href= 'index.html#' + siteLink.href)= siteLink.text
+
+else
+  - var siteLinks = [{href: 'ones-solutions', text: '1С Решения', active: ''}, {href: 'partner-solutions', text: 'Партнерские решения', active: ''}, {href: 'services', text: 'Услуги', active: '1'}, {href: 'actual', text: 'Актуальное', active: ''}, {href: 'about', text: 'О нас', active: ''}, {href: 'contacts', text: 'Контакты', active: ''}];
+
+    ul.site-nav
+      each siteLink in siteLinks
+        if siteLink.active
+          li.site-nav__item.site-nav__item--current
+            a.site-nav__link(href= 'index.html#' + siteLink.href)= siteLink.text
+        else
+          li.site-nav__item
+            a.site-nav__link(href= 'index.html#' + siteLink.href)= siteLink.text

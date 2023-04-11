@@ -1,0 +1,31 @@
+.page-header {
+  //min-height: 100px;
+  //min-height: 35px;
+
+  padding-top: 23px;
+  padding-bottom: 15px;
+
+  background-color: #ffe605;
+}
+
+.page-header .container {
+  //min-height: 35px;
+}
+
+.page-header-wrapper {
+  margin-bottom: 2px;
+}
+
+.page-header-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header-lists-row {
+  display: flex;
+  width: 775px;
+}
+
+.page-header__list {
+  margin-top: 2px;
+}

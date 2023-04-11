@@ -1,0 +1,34 @@
+- var sectionClass = 'ones-solutions';
+- var titleName = '1С Решения';
+
+- var items = [{linkSubtitle: 'sell.html', subtitle: 'Продажа', itemText: 'Поможем с выбором, проконсультируем по функционалу, подберём оптимальную программу по стоимости.'}, {linkSubtitle: 'integration.html', subtitle: 'Внедрение', itemText: 'Внедрим, настроим и адаптируем программу под Ваш бизнес.'}, {linkSubtitle: 'escort.html', subtitle: 'Сопровождение', itemText: 'Обслуживание и поддержка Вашего программного продукта 1С.'}, {linkSubtitle: 'rework.html', subtitle: 'Доработка', itemText: 'Доработаем программу и допишем необходимый функционал под Ваш бизнес.'}, {linkSubtitle: 'rent.html', subtitle: 'Аренда', itemText: 'Программное обеспечение 1С в аренду, с размещением и хранением в облаке.'}, {linkSubtitle: 'services-sets.html', subtitle: 'Сервисы 1С', itemText: 'Поможем с выбором, проконсультируем по функционалу, предоставим доступ и поддержу.'}];
+
+
+
+section.section.section--running-line(class= sectionClass)(id= sectionClass)
+  div.container
+
+    header.section-header
+      h2.section-title= titleName
+        span.blink-underscore _
+
+    ul.section-list.ones-solutions-list
+      each item in items
+        li.section-item.section-item--cards.ones-solutions-item
+
+          header.section-subheader.ones-solutions-subheader
+            a.section-subheader-link(href= item.linkSubtitle)
+
+              h3.section-subtitle.ones-solutions-subtitle
+                span.section-subtitle__inner.ones-solutions-subtitle__inner= item.subtitle
+                if item.subtitle !== 'Сервисы 1С'
+                  span.section-subtitle__inner.ones-solutions-subtitle__inner= 'программных продуктов 1С'
+                else
+                  span.section-subtitle__inner.ones-solutions-subtitle__inner= 'и комплекты поддержки (КП)'
+
+          p.section-item-text= item.itemText
+
+          include ../../../generals/details/details/details
+
+    include ../../../generals/btn/btn/btn
+  include ../../../generals/running-line/running-line

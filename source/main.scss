@@ -1,0 +1,208 @@
+@import "../node_modules/normalize-scss/sass/normalize";
+
+//OUTLINES
+//@import "../globals/outlines";
+
+//SCAFFOLDING
+@import "globals/scaffolding";
+
+//CONTAINER
+@import "blocks/generals/container/container";
+
+//PAGE-HEADER
+@import "blocks/generals/header/page-header/page-header";
+
+//MAIN-NAV
+@import "blocks/generals/header/main-nav/main-nav";
+
+//SITE-NAV
+@import "blocks/generals/header/site-nav/site-nav/site-nav";
+@import "blocks/generals/header/site-nav/site-nav__item";
+@import "blocks/generals/header/site-nav/site-nav__link";
+
+//LOGO
+@import "blocks/generals/logo/logo/logo";
+
+//NAVIGATION
+@import "blocks/generals/navigation/navigation";
+
+//PROMO
+@import "blocks/mains/promo/promo/promo/promo";
+@import "blocks/mains/promo/promo/promo-lead";
+@import "blocks/mains/promo/promo/promo-text";
+
+//BLINK-UNDERSCORE
+@import "blocks/generals/blink-underscore/blink-underscore";
+
+//BTN
+@import "blocks/generals/btn/btn/btn";
+@import "blocks/generals/btn/btn--round";
+@import "blocks/generals/btn/btn--normal";
+@import "blocks/generals/btn/btn-location";
+
+//FEATURES
+@import "blocks/mains/features/features/features";
+@import "blocks/mains/features/features__list";
+@import "blocks/mains/features/features__item";
+
+//SECTION
+@import "globals/section/section";
+
+@import "globals/section/section-header";
+@import "globals/section/section-title";
+
+@import "globals/section/section-lead";
+
+@import "globals/section/section-list";
+@import "globals/section/section-item";
+
+@import "globals/section/section-subtitle";
+@import "globals/section/section-subtitle__inner";
+
+@import "globals/section/section-item-text";
+@import "globals/section/section-item-image/section-item-image";
+
+@import "globals/section/section-description";
+
+//SLIDER
+@import "blocks/generals/slider/slider/slider";
+
+@import "blocks/generals/slider/slider-controls/slider-controls/slider-controls";
+@import "blocks/generals/slider/slider-controls/slider-controls-item";
+@import "blocks/generals/slider/slider-controls/slider-controls-btn";
+
+//RUNNING-LINE
+@import "blocks/generals/running-line/running-line";
+
+//ACTUAL
+@import "blocks/mains/actual/actual/actual/actual";
+@import "blocks/mains/actual/actual/actual-list";
+@import "blocks/mains/actual/actual/actual-item";
+@import "blocks/mains/actual/actual/actual-subheader";
+@import "blocks/mains/actual/actual/actual-subtitle";
+
+//1С-SOLUTIONS
+@import "blocks/mains/1с-solutions/1с-solutions/1с-solutions";
+@import "blocks/mains/1с-solutions/ones-solutions-list";
+@import "blocks/mains/1с-solutions/ones-solutions-item";
+@import "blocks/mains/1с-solutions/ones-solutions-subheader";
+@import "blocks/mains/1с-solutions/ones-solutions-subtitle";
+
+//PARTNER-SOLUTIONS
+@import "blocks/mains/partner-solutions/partner-solutions/partner-solutions/partner-solutions";
+@import "blocks/mains/partner-solutions/partner-solutions/partner-solutions-header";
+@import "blocks/mains/partner-solutions/partner-solutions/partner-solutions-list";
+@import "blocks/mains/partner-solutions/partner-solutions/partner-solutions-item";
+@import "blocks/mains/partner-solutions/partner-solutions/partner-solutions-subheader";
+@import "blocks/mains/partner-solutions/partner-solutions/partner-solutions-item-image";
+
+//DISTRIBUTORS
+@import "blocks/mains/distributors/distributors/distributors/distributors";
+@import "blocks/mains/distributors/distributors/distributors-header";
+@import "blocks/mains/distributors/distributors/distributors-lead";
+@import "blocks/mains/distributors/distributors/distributors-list";
+
+//SERVICES
+@import "blocks/mains/services/services/services/services";
+@import "blocks/mains/services/services/services-header";
+@import "blocks/mains/services/services/services-list";
+@import "blocks/mains/services/services/services-item";
+@import "blocks/mains/services/services/services-subheader";
+@import "blocks/mains/services/services/services-item-text";
+
+//DETAILS
+@import "blocks/generals/details/details/details";
+@import "blocks/generals/details/details-location";
+
+//ABOUT
+@import "blocks/mains/about/about/about";
+
+@import "blocks/mains/about/about-company/about-company";
+@import "blocks/mains/about/about-company/about-company__title";
+@import "blocks/mains/about/about-company/about-company-layout";
+@import "blocks/mains/about/about-company/about-company-text-column";
+
+@import "blocks/mains/about/statistic/statistic";
+@import "blocks/mains/about/statistic/statistic-group";
+@import "blocks/mains/about/statistic/statistic-term";
+@import "blocks/mains/about/statistic/statistic-term__inner";
+@import "blocks/mains/about/statistic/statistic-description";
+
+@import "blocks/mains/about/about-company-info/about-company-info";
+@import "blocks/mains/about/about-company-info/about-company-info__text";
+
+//STATUSES
+@import "blocks/mains/statuses/statuses/statuses";
+
+//FEEDBACK
+@import "blocks/generals/feedback/feedback/feedback/feedback";
+@import "blocks/generals/feedback/feedback/feedback-header";
+@import "blocks/generals/feedback/feedback/feedback-title";
+@import "blocks/generals/feedback/feedback/feedback-description";
+
+@import "blocks/generals/feedback/feedback-form/feedback-form";
+@import "blocks/generals/feedback/feedback-form/feedback-form-layout";
+@import "blocks/generals/feedback/feedback-form/feedback-form-group";
+@import "blocks/generals/feedback/feedback-form/feedback-form-group__label";
+@import "blocks/generals/feedback/feedback-form/feedback-form-group__input";
+
+@import "blocks/generals/feedback/checkbox-area/checkbox-area";
+@import "blocks/generals/feedback/checkbox-area/checkbox-area-label";
+@import "blocks/generals/feedback/checkbox-area/checkbox-area-indicator";
+
+//TECHSUPPORT
+@import "blocks/mains/techsupport/techsupport/techsupport";
+@import "blocks/mains/techsupport/techsupport-description";
+@import "blocks/mains/techsupport/techsupport-list";
+@import "blocks/mains/techsupport/techsupport-item";
+@import "blocks/mains/techsupport/techsupport-item-text";
+@import "blocks/mains/techsupport/techsupport-item-group";
+@import "blocks/mains/techsupport/techsupport-item-link";
+@import "blocks/mains/techsupport/techsupport-item-link__inner";
+@import "blocks/mains/techsupport/techsupport-question";
+
+//CLIENTS
+@import "blocks/mains/clients/clients/clients";
+
+//CONTACTS
+@import "blocks/mains/contacts/contacts/contacts/contacts";
+@import "blocks/mains/contacts/contacts/contacts-header";
+@import "blocks/mains/contacts/contacts/contacts-wrapper";
+@import "blocks/mains/contacts/contacts/contacts-text-column";
+@import "blocks/mains/contacts/contacts__list/contacts__list";
+@import "blocks/mains/contacts/contacts/contacts-item";
+@import "blocks/mains/contacts/contacts/contacts-item-address";
+@import "blocks/mains/contacts/contacts/contacts-item__term";
+@import "blocks/mains/contacts/contacts/contacts-item-description";
+@import "blocks/mains/contacts/contacts/contacts-item-description__link";
+@import "blocks/mains/contacts/contacts/contacts-img-column";
+
+//SOCIALS
+@import "blocks/generals/socials/socials/socials";
+@import "blocks/generals/socials/socials-group__description";
+@import "blocks/generals/socials/socials-list";
+@import "blocks/generals/socials/socials-item";
+
+//PAGE-FOOTER
+@import "blocks/generals/footer/page-footer/page-footer";
+@import "blocks/generals/footer/footer-layout";
+@import "blocks/generals/footer/footer-nav/footer-nav";
+@import "blocks/generals/footer/footer-nav__item";
+@import "blocks/generals/footer/footer-nav__link";
+@import "blocks/generals/footer/footer-feedback-column";
+@import "blocks/generals/footer/footer-feedback";
+@import "blocks/generals/footer/footer-copyright";
+@import "blocks/generals/footer/footer-privacy";
+
+//BREADCRUMBS
+@import "blocks/generals/breadcrumbs/breadcrumbs";
+
+//PAGE-ARTICLE-LAYOUT
+@import "blocks/generals/page-article-layout/page-article-layout";
+
+//PAGE-TITLE
+@import "blocks/generals/page-title/page-title/page-title";
+@import "blocks/generals/page-title/page-title__inner";
+
+//COMPLIES
+@import "blocks/generals/perform/perform";

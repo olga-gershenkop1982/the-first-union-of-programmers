@@ -1,0 +1,24 @@
+- var phonesLinks = [{href: 'tel:+73812380713', text: '+7 (3812) 38-07-13'}, {href: 'tel:+79061971309', text: '+7 (906) 197-13-09'}];
+
+
+
+if header
+  ul.navigation.navigation-phones.page-header__list
+    each phonesLink in phonesLinks
+      li.navigation-phones-item
+        a.navigation-link(href= phonesLink.href)= phonesLink.text
+
+  - var feedbackLinks = [{addedClass: '-write', text: 'написать нам'}, {href: 'feedback', addedClass: '-order', text: 'заказать звонок'}];
+
+  ul.navigation.navigation-feedback.page-header__list
+    each feedbackLink in feedbackLinks
+      li.navigation-feedback-item(class= 'navigation-feedback-item' + feedbackLink.addedClass)
+        a.navigation-link.navigation-link-feedback(href= '#' + feedbackLink.href)= feedbackLink.text
+
+else
+  - var feedbackLinks = [{addedClass: '-write', text: 'написать нам'}];
+
+  ul.navigation.navigation-feedback.page-header__list
+    each feedbackLink in feedbackLinks
+      li.navigation-feedback-item(class= 'navigation-feedback-item' + feedbackLink.addedClass)
+        a.navigation-link.navigation-link-feedback(href="#")= feedbackLink.text

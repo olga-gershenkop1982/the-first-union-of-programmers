@@ -1,0 +1,26 @@
+- var sectionClass = 'actual';
+- var titleName = 'Актуальное';
+
+- var items = [{subtitle: 'Печать чека с номенклатурой: изменения в 2021г.', addedClass: '1'}, {subtitle: 'Маркировка: подводные камни', addedClass: '2'}, {subtitle: '1С:УПП производство Прекращение поддержки с 2024г.', addedClass: '3'}];
+
+
+
+section.section.section--running-line(class= sectionClass)(id= sectionClass)
+  div.container.slider
+
+    header.section-header.slider-header
+      h2.section-title= titleName
+        span.blink-underscore _
+      include ../../../../generals/slider/slider-controls/slider-controls/slider-controls
+
+    ul.section-list.actual-list.slider-list
+      each item in items
+        li.section-item.section-item--cards.actual-item(class= 'actual-item-' + item.addedClass).slider-slide
+
+          header.section-subheader.actual-subheader
+            a.section-subheader-link(href="#")
+              h3.section-subtitle.section-subtitle__inner.actual-subtitle= item.subtitle
+
+          include ../../../../generals/details/details/details
+
+  include ../../../../generals/running-line/running-line

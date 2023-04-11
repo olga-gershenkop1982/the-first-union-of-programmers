@@ -1,0 +1,28 @@
+extends templates/page-main
+
+block append vars
+  - var pageTitle = '«Первый союз программистов»';
+  - var title1 = pageTitle;
+
+
+
+block mainTitle
+  h1(class="visually-hidden")= title1
+
+block sections
+  include blocks/mains/promo/promo/promo/promo
+  include blocks/mains/features/features/features
+  include blocks/mains/actual/actual/actual/actual
+  include blocks/mains/1с-solutions/1с-solutions/1с-solutions
+  include blocks/mains/partner-solutions/partner-solutions/partner-solutions/partner-solutions
+  include blocks/mains/distributors/distributors/distributors/distributors
+  include blocks/mains/services/services/services/services
+  include blocks/mains/about/about/about
+  include blocks/mains/statuses/statuses/statuses
+  include blocks/generals/feedback/feedback/feedback/feedback
+  include blocks/mains/techsupport/techsupport/techsupport
+  include blocks/mains/clients/clients/clients
+  include blocks/mains/contacts/contacts/contacts/contacts
+
+block scripts
+  script(src="js/slider.js")

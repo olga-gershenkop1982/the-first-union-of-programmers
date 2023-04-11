@@ -1,0 +1,28 @@
+block vars
+  - var lang = 'ru';
+  - var bodyClass = 'page';
+
+
+
+doctype html
+html(lang= lang)
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    link(href="css/fonts.css" rel="stylesheet")
+    link(href="css/main.css" rel="stylesheet")
+
+    title= pageTitle
+
+  body(class= bodyClass)
+
+    include ../blocks/generals/header/page-header/page-header
+
+    main
+      block mainTitle
+      block sections
+
+    include ../blocks/generals/footer/page-footer/page-footer
+
+    block scripts

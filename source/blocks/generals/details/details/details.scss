@@ -1,0 +1,25 @@
+.details:hover svg,
+.details:focus svg {
+  fill: #ffe605;
+  outline: none;
+  transition: 0.5s;
+}
+
+.details:active svg {
+  fill: #ffe605;
+  outline: none;
+  transition: 0.5s;
+}
+
+.details:hover circle,
+.details:focus circle {
+  stroke: #ffe605;
+  outline: none;
+  transition: 0.5s;
+}
+
+.details:active circle {
+  stroke: #ffe605;
+  outline: none;
+  transition: 0.5s;
+}

@@ -1,0 +1,41 @@
+.actual-item {
+  position: relative;
+  //min-height: 380px;
+
+  padding-bottom: 59px;
+  border-bottom: 1px solid transparent;
+}
+
+.actual-item::before {
+  position: absolute;
+  top: 195px;
+  left: 19px;
+
+  content: "";
+
+  width: 240px;
+  height: 125px;
+
+  padding: 0;
+
+  background-image: url("../img/actual/actual-sprite.png");
+  background-repeat: no-repeat;
+
+  filter: grayscale(1);
+}
+
+.actual-item-1::before {
+  background-position: -10px -10px;
+}
+
+.actual-item-2::before {
+  background-position: -10px -155px;
+}
+
+.actual-item-3::before {
+  background-position: -10px -300px;
+}
+
+.actual-item:hover::before {
+  filter: none;
+}

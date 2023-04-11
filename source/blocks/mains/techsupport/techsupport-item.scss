@@ -1,0 +1,52 @@
+.techsupport-item {
+  position: relative;
+
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  padding-left: 99px;
+  padding-right: 48px;
+
+  margin-bottom: 60px;
+
+  font-size: 22px;
+  line-height: 33px;
+
+  border-top: 1px solid #020202;
+
+  counter-increment: li;
+}
+
+.techsupport-item:nth-child(1) {
+  padding-bottom: 0;
+}
+
+.techsupport-item:nth-child(3) {
+  margin-bottom: 26px;
+}
+
+.techsupport-item:last-child {
+  margin-bottom: 0;
+}
+
+.techsupport-item::before {
+  position: absolute;
+  left: 2px;
+  top: 0;
+
+  content: "0" counter(li);
+
+  padding: 0;
+
+  font-family: "Roboto Mono", "Courier New", monospace;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 84px;
+
+  color: #f1f2f4;
+
+  text-shadow:
+    1px 0 0 #020202, -1px -0 0 #020202,
+    0 1px 0 #020202, -0 -1px 0 #020202
+  ;
+}

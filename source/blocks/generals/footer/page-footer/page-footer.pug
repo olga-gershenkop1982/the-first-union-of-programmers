@@ -1,0 +1,29 @@
+- var header = false;
+- var sectionClass = '';
+
+- var btn = true;
+
+
+
+footer.page-footer
+  div.container
+
+    div.footer-wrapper
+      div.footer-layout
+
+        include ../../logo/logo/logo
+        include ../footer-nav/footer-nav
+
+        div.footer-feedback-column
+          p.footer-feedback Связаться со специалистом и узнать стоимость
+          include ../../btn/btn/btn
+
+        include ../../../mains/contacts/contacts__list/contacts__list
+
+    div.footer-wrapper
+      div.footer-layout
+
+        p.footer-copyright &copy; 2016-2021 “Первый союз программистов” (ИП Ядрышников И.Б.)
+        a.footer-privacy(href="#") Политика конфиденциальности
+        include ../../navigation/navigation
+        include ../../socials/socials/socials

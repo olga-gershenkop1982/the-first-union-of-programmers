@@ -1,0 +1,21 @@
+.section-title {
+  display: block;
+
+  max-width: 430px;
+
+  margin: 0;
+
+  font-family: "Roboto Mono", "Courier New", monospace;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 60px;
+
+  color: #0745c3;
+}
+
+.page-inner .section-title {
+  max-width: 435px;
+
+  font-size: 40px;
+  line-height: 48px;
+}

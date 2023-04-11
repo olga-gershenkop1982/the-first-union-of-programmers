@@ -1,0 +1,22 @@
+- var breadcrumbsCurrent = pageTitle;
+
+
+
+if tab === 'ones-solutions'
+  - var breadcrumbsLinks = {source: 'ones-solutions', value: '1С Решения'};
+else if tab === 'partner-solutions'
+  - var breadcrumbsLinks = {source: 'partner-solutions', value: 'Партнерские решения'};
+else if tab === 'services'
+  - var breadcrumbsLinks = {source: 'services', value: 'Услуги'};
+
+
+
+ul.breadcrumbs
+
+  li.breadcrumbs__item
+    a.breadcrumbs__link(href='index.html') Главная
+
+  li.breadcrumbs__item
+    a.breadcrumbs__link(href='index.html#' + breadcrumbsLinks.source)= breadcrumbsLinks.value
+
+  li.breadcrumbs__item.breadcrumbs__item--current= breadcrumbsCurrent

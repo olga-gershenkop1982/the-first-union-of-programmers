@@ -1,0 +1,10 @@
+.blink-underscore {
+  animation-name: blink-underscore;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink-underscore {
+  0% {color: inherit;}
+  100% {color: transparent}
+}

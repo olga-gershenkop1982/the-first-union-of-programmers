@@ -1,0 +1,58 @@
+/*HTML, BODY*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*BODY*/
+body {
+  min-width: 1440px;
+
+  font-family: "Roboto Mono", "Courier New", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #020202;
+  background-color: #f1f2f4;
+}
+
+/*A*/
+a {
+  display: block;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+/*IMG*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*SVG*/
+svg {
+  display: block;
+}
+
+/*VISUALLY-HIDDEN*/
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

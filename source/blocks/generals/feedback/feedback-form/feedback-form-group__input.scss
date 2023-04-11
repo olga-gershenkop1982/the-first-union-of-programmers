@@ -1,0 +1,27 @@
+.feedback-form-group__input {
+  box-sizing: border-box;
+
+  display: block;
+
+  width: 100%;
+
+  padding: 22px 20px;
+
+  font-family: "Jost", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+
+  background-color: #ffffff;
+  color: #0745c3;
+
+  border: 0;
+}
+
+.feedback-form-group__input:focus {
+  outline: 2px solid #0745c3;
+}
+
+.feedback-form-group__input::placeholder {
+  color: #79797a;
+}

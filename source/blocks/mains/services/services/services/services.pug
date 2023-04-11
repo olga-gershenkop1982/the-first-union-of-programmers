@@ -1,0 +1,28 @@
+- var sectionClass = 'services';
+- var titleName = 'Услуги';
+
+- var items = [{linkSubtitle: 'commercial-equipment.html', subtitle: 'Торговое оборудование', itemText: 'Подбор, продажа, подключение, настройка...', addedClass: '1'}, {linkSubtitle: 'lan-installation.html', subtitle: 'Монтаж ЛВС', itemText: 'Смета, монтажные работы, подключение, настройка...', addedClass: '2'}, {linkSubtitle: 'accounting-service.html', subtitle: 'Бухгалтерские услуги', itemText: 'Ведение бухучёта, разовое сопровождение...', addedClass: '3'}, {linkSubtitle: 'audio-system.html', subtitle: 'Аудиосистемы', itemText: 'Подбор, продажа, подключение, настройка...', addedClass: '4'}, {subtitle: 'Создание WEB-сайтов', itemText: 'Аналитика, дизайн, вёрстка, разработка, интеграция...', addedClass: '5'}, {linkSubtitle: 'video-system.html', subtitle: 'Видеосистемы', itemText: 'Подбор, продажа, подключение, настройка...', addedClass: '6'}, {subtitle: 'IT-Аутсорсинг', itemText: 'Услуги сисадмина, настройка и ремонт ПК...', addedClass: '7'}];
+
+
+
+section.section.section--running-line(class= sectionClass)(id= sectionClass)
+  div.container
+
+    header.section-header.services-header
+      h2.section-title= titleName
+        span.blink-underscore _
+
+    ul.section-list.services-list
+      each item in items
+        li.section-item.section-item--cards.services-item(class= 'services-item-' + item.addedClass)
+
+          header.section-subheader.services-subheader
+            a.section-subheader-link(href= item.linkSubtitle)
+              h3.section-subtitle.section-subtitle__inner= item.subtitle
+
+          p.section-item-text.services-item-text= item.itemText
+
+          include ../../../../generals/details/details/details
+
+    include ../../../../generals/btn/btn/btn
+  include ../../../../generals/running-line/running-line

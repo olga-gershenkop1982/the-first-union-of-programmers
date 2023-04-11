@@ -1,0 +1,62 @@
+.checkbox-area-indicator + label::before {
+  position: absolute;
+  top: 0;
+  left: -50px;
+
+  content: "";
+
+  box-sizing: border-box;
+
+  width: 30px;
+  height: 30px;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: 1px solid #020202;
+}
+
+.checkbox-area-indicator:hover + label::before,
+.checkbox-area-indicator:focus + label::before {
+  background-color: #ffffff;
+  border: 1px solid #0745c3;
+
+  transition: 0.5s;
+}
+
+.checkbox-area-indicator:checked + label::before {
+  background-color: #ffffff;
+  border: 1px solid #0745c3;
+
+  transition: 0.5s;
+}
+
+.checkbox-area-indicator:checked + label::after {
+  position: absolute;
+  top: 9px;
+  left: -43px;
+
+  content: "";
+
+  width: 15px;
+  height: 10px;
+
+  background-color: transparent;
+  background-image: url("../img/feedback/checkmark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: 0.5s;
+}
+
+.checkbox-area-indicator:checked:hover + label::before,
+.checkbox-area-indicator:checked:focus + label::before {
+  background-color: #0745c3;
+  transition: 0.5s;
+}
+
+.checkbox-area-indicator:checked:hover + label::after,
+.checkbox-area-indicator:checked:focus + label::after {
+  background-image: url("../img/feedback/checkmark-hover.png");
+  transition: 0.5s;
+}

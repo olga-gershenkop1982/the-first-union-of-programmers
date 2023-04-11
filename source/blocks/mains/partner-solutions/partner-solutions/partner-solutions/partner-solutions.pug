@@ -1,0 +1,34 @@
+- var sectionClass = 'partner-solutions';
+- var titleName = 'Партнерские решения';
+
+- var items = [{linkSubtitle: 'bitrix-24.html', subtitle1: 'Битрикс 24', subtitle2: 'CRM', addedClass: 'partner-solutions-item-image', imgPath: '/partner-solutions/', imgNumber: '1.png', imgAlt: 'Битрикс 24', itemText: 'Это приложение, разработанное компанией 1С, которое помогает правильно организовать управление коллективной работой в компании...'}, {linkSubtitle: 'data-mobile.html', subtitle1: 'Data Mobile', subtitle2: 'автоматизация складского учёта', addedClass: 'partner-solutions-item-image', imgPath: '/partner-solutions/', imgNumber: '2.png', imgAlt: 'Data Mobile', itemText: 'Это специализированное программное обеспечение для терминалов сбора данных и мобильных устройств на Win и Android...'}, {linkSubtitle: 'mobi-с.html', subtitle1: 'Моби-C', subtitle2: 'Мобильная торговля', addedClass: 'partner-solutions-item-image', imgPath: '/partner-solutions/', imgNumber: '3.png', imgAlt: 'Моби-C', itemText: 'Это программа для создания рабочих мест полевым сотрудникам: торговому представителю,мерчендайзеру,супервайзеру,экспедитору,и др...'}];
+
+
+
+section.section.section--running-line(class= sectionClass)(id= sectionClass)
+  div.container.slider
+
+    header.section-header.slider-header.partner-solutions-header
+      h2.section-title= titleName
+        span.blink-underscore _
+      include ../../../../generals/slider/slider-controls/slider-controls/slider-controls
+
+    ul.section-list.partner-solutions-list.slider-list
+      each item in items
+        li.section-item.section-item--cards.partner-solutions-item.slider-slide
+
+          header.section-subheader.partner-solutions-subheader
+            a.section-subheader-link(href= item.linkSubtitle)
+
+              h3.section-subtitle
+                span.section-subtitle__inner= item.subtitle1
+                span.section-subtitle__inner= item.subtitle2
+
+          include ../../../../../globals/section/section-item-image/section-item-image
+
+          p.section-item-text= item.itemText
+
+          include ../../../../generals/details/details/details
+
+    include ../../../../generals/btn/btn/btn
+  include ../../../../generals/running-line/running-line

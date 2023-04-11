@@ -1,0 +1,21 @@
+- var sectionClass = 'clients';
+
+- var items = [{addedClass: 'clients-item-image', imgPath: '/clients/', imgNumber: '1.png', imgAlt: '«Александр Богданов»'}, {addedClass: 'clients-item-image', imgPath: '/clients/', imgNumber: '2.png', imgAlt: '«Восточный пекарь»'}, {addedClass: 'clients-item-image', imgPath: '/clients/', imgNumber: '3.png', imgAlt: '«Русский десерт»'}, {addedClass: 'clients-item-image', imgPath: '/clients/', imgNumber: '4.png', imgAlt: '«Изумрудный берег»'}, {addedClass: 'clients-item-image', imgPath: '/clients/', imgNumber: '5.png', imgAlt: '«Папа Джонс»'}];
+
+
+
+section.section.section--less-running-line(class= sectionClass)
+  h2.visually-hidden Наши клиенты_
+
+  div.container.slider
+
+    header.section-header.slider-header.clients-header
+      p.section-lead.clients-lead Нам доверяют
+        span.blink-underscore _
+        span.visually-hidden такие компании, как:
+      include ../../../generals/slider/slider-controls/slider-controls/slider-controls
+
+    ul.section-list.slider-list.clients-list
+      each item in items
+        li.section-item.slider-slide.clients-item
+          include ../../../../globals/section/section-item-image/section-item-image

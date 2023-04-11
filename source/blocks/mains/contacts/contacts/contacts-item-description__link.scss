@@ -1,0 +1,14 @@
+.contacts-item-description__link:hover,
+.contacts-item-description__link:focus {
+  color: #0745c3;
+  transition: 0.5s;
+}
+
+.contacts-item-description__link:active {
+  color: #0745c3;
+  transition: 0.5s;
+}
+
+.page-footer .contacts-item-phone .contacts-item-description__link:nth-child(1) {
+  margin-bottom: 6px;
+}

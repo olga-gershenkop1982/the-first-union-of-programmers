@@ -1,0 +1,34 @@
+.section-item {
+  margin-right: 150px;
+}
+
+.section-item:last-child {
+  margin-right: 0;
+}
+
+.section-item--cards {
+  box-sizing: border-box;
+
+  width: 450px;
+  min-height: 300px;
+
+  padding: 29px 19px;
+
+  border-top: 1px solid #79797a;
+  border-bottom: 1px solid #79797a;
+
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.section-item--cards:hover {
+  background-color: #ffffff;
+  border-color: #79797a;
+
+  transition: 0.5s;
+}
+
+.section-item--cards:hover .actual-subtitle {
+  color: #0745c3;
+  transition: 0.5s;
+}

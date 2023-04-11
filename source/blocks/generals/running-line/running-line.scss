@@ -1,0 +1,46 @@
+.running-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 80px;
+
+  text-transform: uppercase;
+
+  margin: 0;
+
+  padding-top: 100px;
+  padding-bottom: 85px;
+
+  padding-left: 100%;
+  padding-right: 100%;
+
+  color: #f1f2f4;
+
+  text-shadow:
+    1px 0 0 #0745c3, -1px -0 0 #0745c3,
+    0 1px 0 #0745c3, -0 -1px 0 #0745c3;
+
+  white-space: nowrap;
+
+  animation-name: move-line;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  //animation-play-state: paused;
+}
+
+@keyframes move-line {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-100%, 0);}
+}
+
+.running-line--paddingAccent {
+  padding-bottom: 100px;
+}
+
+.running-line--paddingAccentLessNormal {
+  padding-bottom: 70px;
+}

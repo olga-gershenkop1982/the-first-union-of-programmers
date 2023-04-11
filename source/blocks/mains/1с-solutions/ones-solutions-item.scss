@@ -1,0 +1,62 @@
+.ones-solutions-item {
+  position: relative;
+
+  margin-bottom: 70px;
+
+  padding-right: 29px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid transparent;
+}
+
+.ones-solutions-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.ones-solutions-item:nth-child(1) svg {
+  fill: #68d0fe;
+}
+
+.ones-solutions-item:nth-child(1) circle {
+  stroke: #68d0fe;
+}
+
+.ones-solutions-item:nth-child(2) svg {
+  fill: #b182ec;
+}
+
+.ones-solutions-item:nth-child(2) circle {
+  stroke: #b182ec;
+}
+
+.ones-solutions-item:nth-child(3) svg {
+  fill: #71efb8;
+}
+
+.ones-solutions-item:nth-child(3) circle {
+  stroke: #71efb8;
+}
+
+.ones-solutions-item:nth-child(4) svg {
+  fill: #98df1d;
+}
+
+.ones-solutions-item:nth-child(4) circle {
+  stroke: #98df1d;
+}
+
+.ones-solutions-item:nth-child(5) svg {
+  fill: #ffb4e1;
+}
+
+.ones-solutions-item:nth-child(5) circle {
+  stroke: #ffb4e1;
+}
+
+.ones-solutions-item:nth-child(6) svg {
+  fill: #a2c6fc;
+}
+
+.ones-solutions-item:nth-child(6) circle {
+  stroke: #a2c6fc;
+}

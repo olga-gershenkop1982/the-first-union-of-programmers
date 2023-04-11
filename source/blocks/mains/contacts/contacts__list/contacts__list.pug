@@ -1,0 +1,30 @@
+- var contacts = [{term: 'Телефон', link1Href: 'tel:+73812380713', link1Value: '+7 (3812) 38-07-13', link2Href: 'tel:+79061971309', link2Value: '+7 (906) 197-13-09', addedClass: '-phone'}, {term: 'Часы работы', descript: 'пн-вс 09:00—19:00', addedClass: '-working-hours'}, {term: 'Адрес', descript: 'г.Омск, ул.5-я линия, 157 A, кор.10, офис 3', addedClass: '-address'}, {term: 'E-mail', linkHref: 'mailto:pr12yad@yandex.ru', linkValue: 'pr12yad@yandex.ru', addedClass: '-email'}];
+
+
+
+dl.contacts__list
+  each contact in contacts
+    div.contacts-item(class= 'contacts-item' + contact.addedClass)
+
+      if sectionClass === 'contacts'
+        dt.contacts-item__term= contact.term
+        if contact.link1Href
+          dd.contacts-item-description
+            a.contacts-item-description__link(href= contact.link1Href)= contact.link1Value
+            a.contacts-item-description__link(href= contact.link2Href)= contact.link2Value
+        else if contact.linkHref
+          dd.contacts-item-description
+            a.contacts-item-description__link(href= contact.linkHref)= contact.linkValue
+        else
+          dd.contacts-item-description= contact.descript
+      else
+        dt.visually-hidden.contacts-item__term= contact.term
+          if contact.link1Href
+            dd.contacts-item-description
+              a.contacts-item-description__link(href= contact.link1Href)= contact.link1Value
+              a.contacts-item-description__link(href= contact.link2Href)= contact.link2Value
+          else if contact.linkHref
+            dd.contacts-item-description
+              a.contacts-item-description__link(href= contact.linkHref)= contact.linkValue
+          else
+            dd.contacts-item-description= contact.descript

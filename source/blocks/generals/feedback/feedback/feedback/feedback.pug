@@ -1,0 +1,54 @@
+- var sectionClass = 'feedback';
+- var titleName = 'Связаться со специалистом и узнать стоимость';
+
+
+
+section.section.section--less-running-line(class= sectionClass)(id= sectionClass)
+  div.container
+
+    header.section-header.feedback-header
+      h2.section-title.feedback-title= titleName
+        span.blink-underscore _
+
+    p.section-description.feedback-description Бесплатно проконсультироваться, уточнить цены и заказать решение можно по телефону или через форму обратной связи.
+
+    form.feedback-form(
+      action="https://echo.htmlacademy.ru"
+      method="post"
+    )
+
+      div.feedback-form-layout
+        p.feedback-form-group
+          label.feedback-form-group__label(
+            for="feedback-form-fullname"
+          ) Ваше имя
+
+          input.feedback-form-group__input(
+            id="feedback-form-fullname"
+            type="text" name="fullname"
+            placeholder="Иван Иванович"
+          )
+
+        p.feedback-form-group
+          label.feedback-form-group__label(
+            for="feedback-form-phone"
+          ) Номер телефона
+
+          input.feedback-form-group__input(
+            id="feedback-form-phone"
+            type="tel" name="phone"
+            placeholder="+7 0000000000"
+          )
+
+        include ../../../btn/btn/btn
+
+      p.checkbox-area
+        input.visually-hidden.checkbox-area-indicator(
+          id="feedback-form-agreement"
+          type="checkbox"
+          checked
+        )
+
+        label.checkbox-area-label(
+          for="feedback-form-agreement"
+        ) Я согласен на обработку персональных данных

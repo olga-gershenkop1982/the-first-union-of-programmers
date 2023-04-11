@@ -1,0 +1,29 @@
+.contacts-img-column {
+  position: relative;
+  outline: 1px solid #79797a;
+}
+
+.contacts-img-column .iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  box-sizing: border-box;
+  width: 450px;
+  height: 400px;
+}
+
+.contacts-img-column iframe {
+  border: 0;
+}
+
+.contacts-img-column,
+.contacts-img-column__picture {
+  width: 450px;
+  height: 400px;
+}
+
+.contacts-img-column__picture {
+  display: block;
+}

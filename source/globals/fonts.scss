@@ -1,0 +1,61 @@
+/* JOST */
+@font-face {
+  font-weight: 400;
+  font-family: "Jost";
+  font-style: normal;
+  src:
+    url("../fonts/jost/JostRegular.woff2") format("woff2"),
+    url("../fonts/jost/JostRegular.woff") format("woff")
+  ;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Jost";
+  font-style: normal;
+  src:
+    url("../fonts/jost/JostMedium.woff2") format("woff2"),
+    url("../fonts/jost/JostMedium.woff") format("woff")
+  ;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Jost";
+  font-style: normal;
+  src:
+    url("../fonts/jost/JostBold.woff2") format("woff2"),
+    url("../fonts/jost/JostBold.woff") format("woff")
+  ;
+}
+
+/* ROBOTO MONO */
+@font-face {
+  font-weight: 400;
+  font-family: "Roboto Mono";
+  font-style: normal;
+  src:
+    url("../fonts/roboto-mono/RobotoMonoRegular.woff2") format("woff2"),
+    url("../fonts/roboto-mono/RobotoMonoRegular.woff") format("woff")
+  ;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Roboto Mono";
+  font-style: normal;
+  src:
+    url("../fonts/roboto-mono/RobotoMonoMedium.woff2") format("woff2"),
+    url("../fonts/roboto-mono/RobotoMonoMedium.woff") format("woff")
+  ;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Roboto Mono";
+  font-style: normal;
+  src:
+    url("../fonts/roboto-mono/RobotoMonoBold.woff2") format("woff2"),
+    url("../fonts/roboto-mono/RobotoMonoBold.woff") format("woff")
+  ;
+}

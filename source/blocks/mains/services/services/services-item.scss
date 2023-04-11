@@ -1,0 +1,68 @@
+.services-item {
+  position: relative;
+
+  width: 750px;
+  min-height: 170px;
+
+  margin-right: 0;
+
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-right: 29px;
+
+  border-bottom: 1px solid transparent;
+}
+
+.services-item:hover {
+  border-bottom: 1px solid transparent;
+  transition: 0.5s;
+}
+
+.services-item:hover:last-child {
+  border-bottom: 1px solid #79797a;
+  transition: 0.5s;
+}
+
+.services-item::before {
+  position: absolute;
+  top: 65px;
+  left: 19px;
+
+  content: "";
+
+  width: 225px;
+  height: 170px;
+
+  padding: 0;
+
+  background-image: url("../img/services/services-sprite.png");
+  background-repeat: no-repeat;
+}
+
+.services-item-1::before {
+  background-position: -10px -10px;
+}
+
+.services-item-2::before {
+  background-position: -10px -200px;
+}
+
+.services-item-3::before {
+  background-position: -10px -390px;
+}
+
+.services-item-4::before {
+  background-position: -10px -580px;
+}
+
+.services-item-5::before {
+  background-position: -10px -770px;
+}
+
+.services-item-6::before {
+  background-position: -10px -960px;
+}
+
+.services-item-7::before {
+  background-position: -10px -1150px;
+}

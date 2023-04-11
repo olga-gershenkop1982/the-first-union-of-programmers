@@ -1,0 +1,15 @@
+- var footerLinks = [{href: 'about', text: 'О компании'}, {href: 'ones-solutions', text: '1С Решения'}, {href: 'partner-solutions', text: 'Партнерские решения'}, {href: 'services', text: 'Услуги'}, {href: 'actual', text: 'Актуальное'}, {href: 'techsupport', text: 'Техподдержка'}];
+
+
+
+if page
+  ul.footer-nav
+    each footerLink in footerLinks
+      li.footer-nav__item
+        a.footer-nav__link(href= '#' + footerLink.href)= footerLink.text
+
+else
+  ul.footer-nav
+    each footerLink in footerLinks
+      li.footer-nav__item
+        a.footer-nav__link(href= 'index.html#' + footerLink.href)= footerLink.text
